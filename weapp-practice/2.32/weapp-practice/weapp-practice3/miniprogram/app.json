@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/2.30/index",
+    "pages/2.30/threejs/index",
+    "pages/2.30/cube/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "微信小程序全栈开发实践",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "useExtendedLib": {
+    "weui": true
+  }
+}

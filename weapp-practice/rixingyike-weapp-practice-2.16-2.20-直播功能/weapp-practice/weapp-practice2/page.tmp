@@ -1,0 +1,9 @@
+<view class="page-head">
+	<text class="page-head__title">slider</text>
+	<text class="page-head__desc">滑块</text>
+</view>
+
+<view class="page-section">
+	<text class="page-section__title">设置step</text>
+	
+</view>

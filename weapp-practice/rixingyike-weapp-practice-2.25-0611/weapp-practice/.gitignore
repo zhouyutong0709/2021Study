@@ -1,0 +1,16 @@
+# Windows
+[Dd]esktop.ini
+Thumbs.db
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+
+# Node.js
+server/node_modules/
+weapp-practice1/miniprogram/node_modules/
+weapp-practice2/miniprogram/node_modules/

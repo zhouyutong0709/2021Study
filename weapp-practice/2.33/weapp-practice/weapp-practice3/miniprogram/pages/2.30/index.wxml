@@ -1,0 +1,22 @@
+<!--miniprogram/pages/2.30/index.wxml-->
+<text>miniprogram/pages/2.30/index.wxml</text>
+<canvas type="webgl" id="myCanvas1"></canvas>
+
+<navigator url="/pages/2.30/cube/index">pages/2.30/cube/index</navigator>
+
+<!-- 尝试在wxs中使用webgl -->
+<wxs module="webgls">
+var webgls = {}
+webgls.onPropSigned = function(newValue, oldValue, ownerInstance, instance){
+  var canvas = ownerInstance.selectComponent('#myCanvas2')
+  console.log('canvas',canvas)
+  //这个是不行的，在wxs里行不通
+  //nv_canvas.nv_getContext is not a function
+  //var gl = canvas.getContext('webgl')
+  //gl.clearColor(1, 0, 1, 1)
+  //gl.clear(gl.COLOR_BUFFER_BIT)
+}
+
+module.exports = webgls
+</wxs>
+<canvas change:type="{{webgls.onPropSigned}}" type="webgl" id="myCanvas2"></canvas>
